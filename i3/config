@@ -414,4 +414,4 @@ bindsym $mod+backslash exec ~/.rofi-power # for shutdown/reboot
 new_window pixel 2
 exec --no-startup-id xset r rate 200 60 # Set initial delay 200ms, 60times/s for keypress
 exec --no-startup-id setxkbmap -layout us
-exec --no-startup-id ~/.bindcaps.sh # rebind caps to esc and ctr
+exec --no-startup-id sh ~/.bindcaps.sh # rebind caps to esc and ctr
