@@ -410,6 +410,7 @@ mode "$mode_gaps_outer" {
 }
 
 # PERSONAL SHIT
+#################################
 new_window pixel 2
 exec --no-startup-id xset r rate 200 60 # Set initial delay 200ms, 60times/s for keypress
 exec --no-startup-id setxkbmap -layout us
@@ -421,7 +422,9 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # dedicated workspaces
-assign [class="Emacs"] 1
-assign [class="kitty"] 1
-assign [class="Firefox"] 2
-assign [class="telegram-desktop"] 3
+assign [class="Emacs"] $ws1
+assign [class="kitty"] $ws1
+assign [class="Firefox"] $ws2
+assign [class="telegram-desktop"] $ws3
+
+# rename workspaces
