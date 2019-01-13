@@ -417,14 +417,12 @@ exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id sh ~/.bindcaps.sh # rebind caps to esc and ctr
 
 # useful keybindings
+bindsym $mod+comma exec firefox
 bindsym $mod+backslash exec ~/.rofi-power # for shutdown/reboot
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # dedicated workspaces
 assign [class="Emacs"] $ws1
-assign [class="kitty"] $ws1
 assign [class="Firefox"] $ws2
-assign [class="telegram-desktop"] $ws3
-
-# rename workspaces
+assign [class="TelegramDesktop"] $ws3
