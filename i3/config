@@ -20,7 +20,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -412,7 +412,6 @@ mode "$mode_gaps_outer" {
 #################################
 new_window pixel 2
 exec --no-startup-id xset r rate 200 60 # Set initial delay 200ms, 60times/s for keypress
-exec --no-startup-id setxkbmap -layout us
 exec --no-startup-id sh ~/.bindcaps.sh # rebind caps to esc and ctr
 
 # useful keybindings
@@ -425,3 +424,6 @@ bindsym $mod+Shift+Tab workspace prev
 assign [class="Emacs"] $ws1
 assign [class="Firefox"] $ws2
 assign [class="TelegramDesktop"] $ws3
+
+# multiple monitors
+exec xrandr --output DP2 --auto --right-of eDP1
