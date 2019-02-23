@@ -422,7 +422,7 @@ bindsym $mod+comma exec firefox
 bindsym $mod+backslash exec ~/.rofi-power # for shutdown/reboot
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
-bindsym mod4 exec --no-startup-id ~/.config/polybar/scripts/rmenu_1
+bindcode 133 exec ~/.config/polybar/scripts/rmenu_1
 
 # dedicated workspaces
 assign [class="Emacs"] $ws1
